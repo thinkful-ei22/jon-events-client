@@ -47,7 +47,7 @@ export function crudReducer(state = initialState, action) {
       ...state,
       loading: false,
       error: null,
-      events: action.data
+      events: [...state.events, action.data]
     }
   }
   else if (action.type === POST_ERROR) {

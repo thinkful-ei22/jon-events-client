@@ -8,6 +8,7 @@ class SearchBox extends React.Component {
     this.props.dispatch(fetchEvents(this.input.value));
     console.log(this.input.value);
   }
+
   render() {
     const events = this.props.events.map((event, index) => (
       <li key={index}>{event.title}
@@ -33,9 +34,9 @@ class SearchBox extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  events: state.events,
-  loading: state.loading,
-  error: state.error
+  events: state.crudReducer.events,
+  loading: state.crudReducer.loading,
+  error: state.crudReducer.error
 })
 
 export default connect(mapStateToProps)(SearchBox);

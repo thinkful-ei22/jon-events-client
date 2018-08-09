@@ -32,3 +32,17 @@ export const fetchEvents = (query) => dispatch => {
     .then(events => dispatch(fetchSuccess(events)))
     .catch(err => dispatch(fetchError(err)))
   }
+
+  export const displayEvents = (data) => dispatch => {
+    console.log('fetchEvents was called');
+    dispatch(fetchRequest());
+    fetch(`${API_BASE_URL}/events`)
+      .then(res => {
+        if (!res.ok) {
+          return Promise.reject(res.statusText)
+        }
+        return(res.json())
+      })
+      .then(events => dispatch(fetchSuccess(events)))
+      .catch(err => dispatch(fetchError(err)))
+    }

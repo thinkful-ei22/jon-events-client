@@ -33,9 +33,9 @@ class EventCreator extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  events: state.events,
-  loading: state.loading,
-  error: state.error
+  events: state.crudReducer.events,
+  loading: state.crudReducer.loading,
+  error: state.crudReducer.error
 })
 
 export default connect(mapStateToProps)(EventCreator);
