@@ -17,7 +17,7 @@ export function crudReducer(state = initialState, action) {
     }
   }
   else if(action.type === FETCH_SUCCESS) {
-    console.log('successful request')
+    console.log('successful request,', action.data)
     return {
       ...state,
       loading: false,

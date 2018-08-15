@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import './searchbox.css';
 import {fetchEvents} from '../actions/getevents'
 
 class SearchBox extends React.Component {
@@ -10,25 +11,21 @@ class SearchBox extends React.Component {
   }
 
   render() {
-    const events = this.props.events.map((event, index) => (
-      <li key={index}>{event.title}
-      <br/>{event.description}<br/>{event.dateOfEvent}</li>
-    ));
+
   return (
-  
-  <div>
-    <h2>Search for local events</h2>
-    <form onSubmit={e => this.onSubmit(e)}>
-       <input 
-            type ="text" 
-            id='event-input' 
-            placeholder='Search for an event'
-            ref={input => (this.input = input)}>
-        </input>
-        <input type='submit'></input>
-      </form>
-      <ul>{events}</ul>
-  </div>
+    <div className="search-box-header">
+      <h2>Search For Local Events</h2>
+      <div className='search-box-container'>
+        <form className='searchbox' onSubmit={e => this.onSubmit(e)}>
+          <input 
+                type ="text" 
+                id='event-input' 
+                placeholder='Search for an Event'
+                ref={input => (this.input = input)}/>
+            <input id="event-submit" type='submit' value='SEARCH'/>
+          </form>
+      </div>
+    </div>
     );
   }
 }

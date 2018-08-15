@@ -17,7 +17,7 @@ const store = createStore(
         authReducer,
         crudReducer,
     }),
-    applyMiddleware(thunk, createLogger())
+    applyMiddleware(thunk)
 );
 
 const authToken = loadAuthToken();

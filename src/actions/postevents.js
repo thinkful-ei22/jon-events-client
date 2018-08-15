@@ -18,7 +18,7 @@ export const postError = (err) => ({
 })
 
 export const postEvents = (data) => dispatch => {
-  console.log('postEvents was called');
+  // console.log('postEvents was called');
   dispatch(postRequest());
   fetch(`${API_BASE_URL}/events`, {
     method: 'POST',

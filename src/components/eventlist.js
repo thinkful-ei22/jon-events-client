@@ -1,16 +1,16 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import { displayEvents } from '../actions/getevents';
+import {Link} from 'react-router-dom';
+import EventCard from './eventcard';
+import './eventlist.css'
 
 class EventList extends React.Component {
-  componentDidMount() {
-    this.props.dispatch(displayEvents());
-  }
+
   render() {
     const events = this.props.events.map((event, index) => (
-      <li key={index}>{event.title}
-      <br/>{event.description}<br/>{event.dateOfEvent}</li>
+      <Link to={`/event/${event._id}`} key={event._id} id="event-links"><EventCard {...event}/></Link>
     ));
+    // console.log(events);
 
     return (
       <ul>

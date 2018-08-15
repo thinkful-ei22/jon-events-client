@@ -1,0 +1,30 @@
+.eventcards {
+  display: block;
+  padding: 16px 16px 0;
+  border: 1px solid rgba(0,0,0,.12);
+  font-size: 16px;
+  border-radius: 3px;
+  list-style: none;
+  width: 45%;
+  margin: 40px auto;
+}
+
+#eventcard-date {
+  font-size: 10px;
+  font-variant: Small-Caps;
+  font-weight: bolder;
+}
+
+#eventcard-title {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#eventcard-description {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h1, h3 {
+  text-align: center;
+}

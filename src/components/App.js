@@ -9,50 +9,32 @@ import Login from './login';
 import Home from './home';
 import Dashboard from './dashboard';
 import EventCreator from './eventcreator';
+import EventDesc from './eventdesc';
+import NavBar from './navbar';
+import { displayEvents } from '../actions/getevents';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {clearAuth} from '../actions/auth';
 import {clearAuthToken} from '../local-storage';
 
 
 class App extends React.Component {
-  logOut() {
-    this.props.dispatch(clearAuth());
-    clearAuthToken();
-  }
- render() {
-  let logOutButton;
-  if (this.props.currentUser) {
-    logOutButton = (
-      <button onClick={() => this.logOut()}>Log out</button>
-  );
+
+  componentDidMount() {
+    this.props.dispatch(displayEvents());
   }
 
+ render() {
+ 
  return (
    <Router>
      <div className='app'>
-      <header>
-        <h1><Link to='/'>EventList</Link></h1>
-        {logOutButton}
-        <ul>
-           {/* <li className='link'><>Browse Events</a></li> */}
-           {this.props.isLogged ? (
-              
-              <li className='link'><Link to='/create-event'>Create Event</Link></li>
-           ): (
-             <React.Fragment>
-               <li className='link'><Link to='/sign-up'>Sign up</Link></li>
-               <li className='link'><Link to='/login'>Login</Link></li>
-             </React.Fragment>
-           )}
-        </ul>
-      </header>
-      <main>
+        <NavBar isLogged={this.props.isLogged} currentUser={this.props.currentUser}/>
         <Route exact path ='/' component={Home}/>
         <Route exact path ='/dashboard' component={Dashboard}/>
         <Route exact path ='/sign-up' component={SignUp}/>
         <Route exact path ='/login' component={Login}/>
         <Route exact path ='/create-event' component={EventCreator}/>
-      </main>
+        <Route exact path ='/event/:id' component={EventDesc}/>
      </div>
    </Router>
  )
