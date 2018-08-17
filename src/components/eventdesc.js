@@ -30,6 +30,8 @@ class EventDesc extends React.Component {
             </header>
           <h4><strong className="eventdesc-labels">Description</strong></h4>
           <p id="eventdesc-desc">{event.description}</p>
+          <h4><strong className="eventdesc-labels">Info</strong></h4>
+          <p id="eventdesc-desc">{event.info}</p>
         </div>
         <h2 id="eventdesc-bottom-header">Browse Other Events</h2>
         <div>
