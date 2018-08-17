@@ -9,6 +9,10 @@ This is a simple app that allows users to search for and create all kinds of eve
 
 I used heroku to deploy this application: https://dry-inlet-97008.herokuapp.com/
 
+### A dummy user has been set-up:
+    Username: Test
+    Password: password
+
 ##  Screenshots
 ### *The home page, where users can search for and browse other events:
 <img width="400" height="200" alt="ss1" src="https://user-images.githubusercontent.com/38267761/44282505-1e84db80-a210-11e8-8992-9a9b9fa641b7.png">       <img width="400" alt="ss1 5" src="https://user-images.githubusercontent.com/38267761/44282509-22186280-a210-11e8-8930-5dccc6710348.png">
