@@ -8,7 +8,7 @@ class SearchBox extends React.Component {
   onSubmit(e) {
     e.preventDefault();
     this.props.dispatch(fetchEvents(this.input.value));
-    console.log(this.input.value);
+    // console.log(this.input.value);
   }
 
   render() {
