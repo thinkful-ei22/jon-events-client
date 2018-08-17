@@ -12,7 +12,6 @@ class SearchBox extends React.Component {
   }
 
   render() {
-
   return (
     <div className="search-box-header">
       <h2>Find a New Experience</h2>
