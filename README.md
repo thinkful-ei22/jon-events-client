@@ -35,10 +35,10 @@ This app has many components, but the main ones consist of: <App/>, <Sign-up (or
 
 All of the components live in the src/components/<name of component> directory.
 
-App: The job of the App component is to handle the routes for the components, as well as mount the get/events data upon loading.
+_App_: The job of the App component is to handle the routes for the components, as well as mount the get/events data upon loading.
 
-Sign-up/Login: The sign-up and login components handle the input of the users. 
+_Sign-up/Login_: The sign-up and login components handle the input of the users. 
 
-EventCreator: The EventCreator component is responsible for creating events and sending data to the post endpoint. 
+_EventCreator_: The EventCreator component is responsible for creating events and sending data to the post endpoint. 
 
-EventList: Lastly, the EventList component is responsible for fetching, as well as searching for, data to display.
+_EventList_: Lastly, the EventList component is responsible for fetching, as well as searching for, data to display.
