@@ -7,10 +7,8 @@ This is a simple app that allows users to search for and create all kinds of eve
 
 ##  Screenshots
 ### *The home page, where users can search for and browse other events:
-<img width="400" alt="ss1" src="https://user-images.githubusercontent.com/38267761/44282505-1e84db80-a210-11e8-8992-9a9b9fa641b7.png">
+<img width="400" alt="ss1" src="https://user-images.githubusercontent.com/38267761/44282505-1e84db80-a210-11e8-8992-9a9b9fa641b7.png"> <img width="400" alt="ss1 5" src="https://user-images.githubusercontent.com/38267761/44282509-22186280-a210-11e8-8930-5dccc6710348.png">
 
-###  *The bottom half of the home page:
-<img width="400" alt="ss1 5" src="https://user-images.githubusercontent.com/38267761/44282509-22186280-a210-11e8-8930-5dccc6710348.png">
 
 ###  *Sign-up page:
 <img width="400" alt="ss2" src="https://user-images.githubusercontent.com/38267761/44282518-26dd1680-a210-11e8-9d53-644e903d2187.png">
