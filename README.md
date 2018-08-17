@@ -19,3 +19,26 @@ This is a simple app that allows users to search for and create all kinds of eve
 
 ### *A page to show the details of an event:
 <img width="600" alt="ss5" src="https://user-images.githubusercontent.com/38267761/44282524-280e4380-a210-11e8-8d15-d26205bff743.png">
+
+
+## Tech Stack
+
+This app was created using React for the front-end, and Node for the back-end.
+
+*Front-end*: React was used to build the client side of this application, with Redux used for state-management. React stateful components are used to manage state for each indiviual component. React-router is used to route and connect the various components together. A react-slideshow libray is used to create the carousel of pictures at the top of the homepage. Some testing was done using Jest. 
+
+*Back-end*: Node.js was used to create the server side of this application. Mongo was used to manage the database, with mlab to host the data. The express middleware was used to help modularize the server side. Some testing was done using mocha and chai.
+
+## Key Parts
+
+This app has many components, but the main ones consist of: <App/>, <Sign-up (or login)/>, <EventCreator/> , and <EventList/>.
+
+All of the components live in the src/components/<name of component> directory.
+
+App: The job of the App component is to handle the routes for the components, as well as mount the get/events data upon loading.
+
+Sign-up/Login: The sign-up and login components handle the input of the users. 
+
+EventCreator: The EventCreator component is responsible for creating events and sending data to the post endpoint. 
+
+EventList: Lastly, the EventList component is responsible for fetching, as well as searching for, data to display.
