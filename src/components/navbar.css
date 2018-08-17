@@ -36,3 +36,17 @@ ul {
 #sign-up-link, #create-event-link, #login-link {
   color: rgba(22, 18, 18, 0.774);
 }
+
+@media only screen and (max-width: 400px) {
+  header li a {
+    border: none;
+  }
+  #myTopnav a {
+    float: right;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+}

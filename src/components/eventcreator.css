@@ -72,3 +72,30 @@ label {
   font-weight: 400;
   letter-spacing: .5px;
 }
+
+@media only screen and (max-width: 400px) {
+  .create-container {
+    width: 500px;
+  }
+
+  label {
+    vertical-align: middle;
+    font-size: 12px;
+    color: #282C35;
+    line-height: 17px;
+  }
+  
+  #event-name, #event-desc {
+    border-radius: 3px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px #D2D6DF solid;
+    background: #fff;
+    color: #45494E;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: .5px;
+  }
+}

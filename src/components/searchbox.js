@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import './searchbox.css';
 import {fetchEvents} from '../actions/getevents'
 
+
 class SearchBox extends React.Component {
   onSubmit(e) {
     e.preventDefault();
@@ -22,7 +23,7 @@ class SearchBox extends React.Component {
                 id='event-input' 
                 placeholder='Search for events or descriptions'
                 ref={input => (this.input = input)}/>
-            <input id="event-submit" type='submit' value='SEARCH'/>
+            <input src="" id="event-submit" type='submit' value='SEARCH'/>
           </form>
       </div>
     </div>

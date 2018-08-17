@@ -18,7 +18,7 @@ class NavBar extends React.Component {
   return (
     <header className='nav-bar'>
         <h1><Link className='logo' to='/'>EventFinder</Link></h1>
-        <ul>
+        <ul id="myTopnav">
            {/* <li className='link'><>Browse Events</a></li> */}
            {this.props.isLogged ? (
               
@@ -34,6 +34,7 @@ class NavBar extends React.Component {
                <li className='link'><Link to='/login' id="login-link">LOGIN</Link></li>
              </React.Fragment>
            )}
+           
         </ul>
       </header>
   )
