@@ -35,7 +35,7 @@ This app was created using React for the front-end, and Node for the back-end.
 
 ## Key Parts
 
-This app has many components, but the main ones consist of: App Sign-up (or login), EventCreator , and EventList.
+This app has many components, but the main ones consist of:**App**, **Sign-up (or Login)**, **EventCreator** , and **EventList**.
 
 All of the components live in the src/components/<name of component> directory.
 
