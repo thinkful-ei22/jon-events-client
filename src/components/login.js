@@ -24,17 +24,18 @@ export class Login extends React.Component {
     );
     }
     if (this.props.isLogged) {
-      return <Redirect to="/dashboard"/>
+      return <Redirect to="/"/>
     }
   return (
-    <div>
-      <form className='form-login' onSubmit={e => this.onSubmit(e)}>
+    <div className="sign-up-container">
+      <h2 className="sign-up-header">Login</h2>
+      <form className='form-login' onSubmit={e => this.onSubmit(e)} className="sign-up-form-container">
       {error}
         <label htmlFor='user'>Username:</label>
         <input type='text' id='user' name='username' required></input>
         <label htmlFor='password'>Password:</label>
         <input type='password' id='password' name='password' required></input>
-        <input type='submit' value ='Login'></input>
+        <input type='submit' value ='Login' className="sign-up-button"></input>
       </form>
     </div>
     );

@@ -1,15 +1,37 @@
+.eventdesc-container {
+text-align: center;
+border-style: inset;
+border-width: 7px;
+border-color: #658525;
+}
+
 #eventdesc-title {
 font-size: 30px;
 font-weight: bold;
 font-variant: small-caps;
+font-family: 'Shadows Into Light';
 }
 
 #eventdesc-date {
-  text-align: left;
   font-size: 20px;
 }
 
 #eventdesc-desc{
   font-variant: small-caps;
-  
+}
+
+.eventdesc-labels {
+/* font-family: 'Pacifico', cursive; */
+font-family: 'Shadows Into Light';
+/* font-family: 'Dancing Script', cursive; */
+}
+
+#eventdesc-top-header {
+  font-family: 'Dancing Script', cursive;
+}
+
+#eventdesc-bottom-header {
+  font-size: 25px;
+  font-weight: lighter;
+  margin: 50px auto;
 }

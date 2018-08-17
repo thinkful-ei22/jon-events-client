@@ -7,7 +7,8 @@ const EventCard =(props) =>  {
   console.log(props);
   return(
     <div className='eventcards'>
-        {props.imageUrl && <img src={props.imageUrl}/> } 
+        
+        {props.imageUrl && <img src={props.imageUrl} id="event-images"/> } 
         <h3 id="eventcard-date">{moment(props.dateOfEvent).format('LLLL')}</h3>
         <h3 id="eventcard-title"><u>{props.title}</u></h3>
         <h3 id="eventcard-description">"{props.description}"</h3>  

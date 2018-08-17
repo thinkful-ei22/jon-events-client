@@ -3,6 +3,7 @@
   align-items: baseline;
   justify-content: space-between;
   border-bottom: 1px solid #D2D6DF;
+  margin-bottom: 10px;
 }
 
 header li a {
@@ -26,8 +27,8 @@ ul {
 }
 
 .logo {
-  color: #6a9c78;
-  font-family: 'Roboto', sans-serif;
+  color: #092a35;
+  font-family: 'Monoton';
   font-weight: 900;
   font-weight: bold;
 }

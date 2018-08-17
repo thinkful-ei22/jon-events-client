@@ -1,12 +1,13 @@
 import React from 'react';
 import SearchBox from './searchbox';
 import EventList from './eventlist';
+import Slideshow from './slideshow';
 
 export default function Home(props) {
  
   return (
     <div>
-      <img id='top-image' src={window.location.origin + '/img/concert.jpg'} />
+      <Slideshow/>
       <SearchBox/>
       <EventList/>
     </div>

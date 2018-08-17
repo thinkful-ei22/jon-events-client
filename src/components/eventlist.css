@@ -1,3 +1,13 @@
 #event-links {
   color: black;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.events__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px;
+  margin-top: 35px;
 }

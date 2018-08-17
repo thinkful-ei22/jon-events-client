@@ -26,23 +26,26 @@ class SignUp extends React.Component {
     );
     }
     if (this.props.isLogged) {
-      return <Redirect to="/dashboard"/>
+      return <Redirect to="/"/>
     }
 
   return (
     <div>
-      <form onSubmit={e => this.onSubmit(e)}>
-      {error}
-        <label htmlFor='user'>Username:</label>
-        <input type='text'id='user' name='username' required></input>
-        <label htmlFor='password'>Password:</label>
-        <input type='password' id='password' name='password' required></input>
-        <label htmlFor='firstname'>First Name:</label>
-        <input type='text' id='firstname' name='firstname' required></input>
-        <label htmlFor='lastname'>Last Name:</label>
-        <input type='text' id='lastname' name='lastname' required></input>
-        <input type='submit' value='sign-up'></input>
-      </form>
+      <div className="sign-up-container">
+      <h2 className="sign-up-header">Sign-up!</h2>
+        <form onSubmit={e => this.onSubmit(e)} className="sign-up-form-container">
+        {error}
+          <label htmlFor='user'>Username:</label>
+          <input type='text'id='user' name='username' required></input>
+          <label htmlFor='password'>Password:</label>
+          <input type='password' id='password' name='password' required></input>
+          <label htmlFor='firstname'>First Name:</label>
+          <input type='text' id='firstname' name='firstname' required></input>
+          <label htmlFor='lastname'>Last Name:</label>
+          <input type='text' id='lastname' name='lastname' required></input>
+          <input type='submit' value='sign-up' className='sign-up-button'></input>
+        </form>
+      </div>
     </div>
   )
 }

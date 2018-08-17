@@ -17,7 +17,7 @@ class NavBar extends React.Component {
  
   return (
     <header className='nav-bar'>
-        <h1><Link className='logo' to='/'>EventList</Link></h1>
+        <h1><Link className='logo' to='/'>EventFinder</Link></h1>
         <ul>
            {/* <li className='link'><>Browse Events</a></li> */}
            {this.props.isLogged ? (

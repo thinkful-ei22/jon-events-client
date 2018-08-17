@@ -21,14 +21,28 @@
   color: #6a9c78;
 }
 
+#event-picture {
+  border-radius: 3px;
+  vertical-align: middle;
+  width: 50%;
+  border: 1px #D2D6DF solid;
+  background: #fff;
+  color: #45494E;
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  margin-top: 10px;
+}
+
 #event-info {
   min-width: 100%;
   
 }
 
 #create-event-button {
-  position: absolute;
-  right: 50%;
+  display: block;
+  margin: 20px auto;
   cursor: pointer;
   font-weight: 600;
   color: #fff;

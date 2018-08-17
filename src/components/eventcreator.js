@@ -39,9 +39,9 @@ class EventCreator extends React.Component {
             <label htmlFor='info'>Event Info:</label>
             <textarea rows='7' cols='65' type='text'id='event-info' name='eventinfo'></textarea>
             <label htmlFor='date'>Event Date</label>
-            <input type='datetime-local' id='event-date' name='date'></input>
+            <input type='datetime-local' id='event-date' name='date'></input><br/>
             <label htmlFor="event-picture">Image:</label>
-            <input type="text" id="event-picture" name="image"/>
+            <input type="text" id="event-picture" name="image" placeholder="Enter image URL"/>
             <input type='submit' value='Create Event' id="create-event-button"></input>
           </form>
         </div>

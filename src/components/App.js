@@ -7,7 +7,6 @@ import EventList from './eventlist';
 import SignUp from './sign-up';
 import Login from './login';
 import Home from './home';
-import Dashboard from './dashboard';
 import EventCreator from './eventcreator';
 import EventDesc from './eventdesc';
 import NavBar from './navbar';
@@ -30,7 +29,6 @@ class App extends React.Component {
      <div className='app'>
         <NavBar isLogged={this.props.isLogged} currentUser={this.props.currentUser}/>
         <Route exact path ='/' component={Home}/>
-        <Route exact path ='/dashboard' component={Dashboard}/>
         <Route exact path ='/sign-up' component={SignUp}/>
         <Route exact path ='/login' component={Login}/>
         <Route exact path ='/create-event' component={EventCreator}/>

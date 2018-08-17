@@ -14,15 +14,15 @@
 
 h2 {
   text-align: center;
-  color: rgb(250, 243, 243);
+  font-size: 35px;
+  color: #092a35;
 }
 
 .search-box-header {
   display: block;
-  background: #6a9c78;
+  border: 2px solid #D2D6DF;
   width: 75%;
   margin: 5px auto;
-  height: 100px;
   padding: 10px 0;
 }
 

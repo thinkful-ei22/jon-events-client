@@ -14,13 +14,13 @@ class SearchBox extends React.Component {
 
   return (
     <div className="search-box-header">
-      <h2>Search For Local Events</h2>
+      <h2>Find a New Experience</h2>
       <div className='search-box-container'>
         <form className='searchbox' onSubmit={e => this.onSubmit(e)}>
           <input 
                 type ="text" 
                 id='event-input' 
-                placeholder='Search for an Event'
+                placeholder='Search for events or descriptions'
                 ref={input => (this.input = input)}/>
             <input id="event-submit" type='submit' value='SEARCH'/>
           </form>
