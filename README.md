@@ -3,7 +3,7 @@ Find yourself bored at home with nothing to do? Search for various events to att
 
 ## Description
 
-This is a simple app that allows users to search for and create all kinds of events. It is a type of social networking app tah t will help users meet new people or find new hobbies.
+This is a simple app that allows users to search for and create all kinds of events. It is a type of social networking app that will help users meet new people or find new hobbies.
 
 ## Link to Application
 
