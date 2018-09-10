@@ -6,10 +6,6 @@
   margin-bottom: 10px;
 }
 
-header li a {
-  border-right: 1px solid #000;
-  padding: 6px;
-}
 
 header li:last-child a {
   border:none;

@@ -2,15 +2,20 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import EventCard from './eventcard';
-import './eventlist.css'
+import './eventlist.css';
 
 class EventList extends React.Component {
 
   render() {
+    if (this.props.loading) {
+      return <h1>Loading....</h1>
+    }
     const events = this.props.events.map((event, index) => (
       <Link to={`/event/${event._id}`} key={event._id} id="event-links"><EventCard {...event}/></Link>
     ));
-    console.log(events);
+    
+
+
 
     return (
       <div className="events__list">

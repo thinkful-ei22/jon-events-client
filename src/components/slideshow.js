@@ -1,11 +1,15 @@
 import React from 'react';
 import './slideshow.css';
 import { Slide } from 'react-slideshow-image';
+import {connect} from 'react-redux';
+
 
 const images = [require("../assets/img/img1.jpg"), require("../assets/img/img2.jpg"), require("../assets/img/img4.jpg")]
 
-export default function Slideshow() {
- 
+function Slideshow(props) {
+ if (props.isLogged) {
+   return null;
+ }
   return (
     <div className="slideshow-container">
         <Slide
@@ -16,3 +20,9 @@ export default function Slideshow() {
     </div>
   )
 }
+
+const mapStateToProps = (state) => ({
+  isLogged: state.authReducer.loggedIn, 
+}); 
+
+export default connect(mapStateToProps)(Slideshow);
