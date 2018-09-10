@@ -15,7 +15,7 @@ class EventDesc extends React.Component {
       return event._id === id
     })[0]
     if (!event) {
-      return 'loading'
+      return 'is loading'
     }
     // console.log(event);
   return (
