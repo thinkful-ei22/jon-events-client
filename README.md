@@ -7,10 +7,12 @@ This is a simple app that allows users to search for and create all kinds of eve
 
 ## Link to Application
 
-I used heroku to deploy this application: https://dry-inlet-97008.herokuapp.com/
+I used heroku to deploy this application: https://eventfinder-client.herokuapp.com/
+
+The backend can be found here: https://github.com/thinkful-ei22/jon-events-server
 
 ### A dummy user has been set-up:
-    Username: Test
+    Username: Test (username is case sensitive)
     Password: password
 
 ##  Screenshots
