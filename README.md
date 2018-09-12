@@ -12,7 +12,7 @@ I used heroku to deploy this application: https://eventfinder-client.herokuapp.c
 The backend can be found here: https://github.com/thinkful-ei22/jon-events-server
 
 ### A dummy user has been set-up:
-    Username: Test (username is case sensitive)
+    Username: test (username is case sensitive)
     Password: password
 
 ##  Screenshots
