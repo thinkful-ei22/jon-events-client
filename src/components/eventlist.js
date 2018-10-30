@@ -14,9 +14,13 @@ class EventList extends React.Component {
     const events = this.props.events.map((event, index) => (
       <Link to={`/event/${event._id}`} key={event._id} id="event-links"><EventCard {...event}/></Link>
     ));
+<<<<<<< HEAD
     
 
 
+=======
+    // console.log(events);
+>>>>>>> Feature
 
     return (
       <div className="events__list">

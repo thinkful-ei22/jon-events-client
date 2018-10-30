@@ -13,7 +13,7 @@ class SignUp extends React.Component {
       firstName: e.target.firstname.value,
       lastName: e.target.lastname.value
     }
-    console.log(data);
+    // console.log(data);
     this.props.dispatch(registerUser(data));
   }
   render(){
