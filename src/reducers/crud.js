@@ -9,7 +9,7 @@ const initialState = {
 
 export function crudReducer(state = initialState, action) {
   if (action.type === FETCH_REQUEST) {
-    console.log('request being made')
+    // console.log('request being made')
     return {
       ...state,
       loading: true,
@@ -17,7 +17,7 @@ export function crudReducer(state = initialState, action) {
     }
   }
   else if(action.type === FETCH_SUCCESS) {
-    console.log('successful request,', action.data)
+    // console.log('successful request,', action.data)
     return {
       ...state,
       loading: false,
@@ -26,7 +26,7 @@ export function crudReducer(state = initialState, action) {
     }
   }
   else if (action.type === FETCH_ERROR) {
-    console.log('Error with request')
+    // console.log('Error with request')
     return {
       ...state,
       loading: false,
@@ -34,7 +34,7 @@ export function crudReducer(state = initialState, action) {
     }
   }
   if (action.type === POST_REQUEST) {
-    console.log('request being made')
+    // console.log('request being made')
     return {
       ...state,
       loading: true,
@@ -42,7 +42,7 @@ export function crudReducer(state = initialState, action) {
     }
   }
   else if (action.type === POST_SUCCESS) {
-    console.log('successful request')
+    // console.log('successful request')
     return {
       ...state,
       loading: false,
@@ -51,7 +51,7 @@ export function crudReducer(state = initialState, action) {
     }
   }
   else if (action.type === POST_ERROR) {
-    console.log('Error with request')
+    // console.log('Error with request')
     return {
       ...state,
       loading: false,

@@ -20,7 +20,7 @@ export const fetchError = (err) => ({
 
 
 export const fetchEvents = (query) => dispatch => {
-  console.log('fetchEvents was called');
+  // console.log('fetchEvents was called');
   dispatch(fetchRequest());
   fetch(`${API_BASE_URL}/events?searchTerm=${query}`)
     .then(res => {
@@ -34,7 +34,7 @@ export const fetchEvents = (query) => dispatch => {
   }
 
   export const displayEvents = (data) => dispatch => {
-    console.log('fetchEvents was called');
+    // console.log('fetchEvents was called');
     dispatch(fetchRequest());
     fetch(`${API_BASE_URL}/events`)
       .then(res => {
