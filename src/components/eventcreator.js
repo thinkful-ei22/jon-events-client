@@ -21,7 +21,7 @@ class EventCreator extends React.Component {
   }
 
   imageChange = e => {
-    console.log(e.target.files);
+    // console.log(e.target.files);
   }
   
   render() {

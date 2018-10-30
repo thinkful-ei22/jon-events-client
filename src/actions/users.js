@@ -18,7 +18,7 @@ export const registerError = (err) => ({
 })
 
 export const registerUser = (data) => dispatch => {
-  console.log('registerEvent was called');
+  // console.log('registerEvent was called');
   dispatch(registerRequest());
   fetch(`${API_BASE_URL}/users`, {
     method: 'POST',

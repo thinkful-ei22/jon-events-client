@@ -8,7 +8,7 @@ const initialState = {
 
 export function userReducer(state = initialState, action) {
   if (action.type === REGISTER_REQUEST) {
-    console.log('request being made')
+    // console.log('request being made')
     return {
       ...state,
       loading: true,
@@ -16,7 +16,7 @@ export function userReducer(state = initialState, action) {
     }
   }
   else if (action.type === REGISTER_SUCCESS) {
-    console.log('Registered successfully')
+    // console.log('Registered successfully')
     return {
       ...state,
       isLogged: action.data,
@@ -25,7 +25,7 @@ export function userReducer(state = initialState, action) {
     }
   }
   else if (action.type === REGISTER_ERROR) {
-    console.log('Error with request')
+    // console.log('Error with request')
     return {
       ...state,
       loading: false,

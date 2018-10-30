@@ -7,6 +7,7 @@ import './eventlist.css';
 class EventList extends React.Component {
 
   render() {
+    // console.log(events);
     if (this.props.loading) {
       return <h1>Loading....</h1>
     }

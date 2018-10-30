@@ -4,7 +4,7 @@ import moment from 'moment';
 
 
 const EventCard =(props) =>  {
-  console.log(props);
+  // console.log(props);
   return(
     <div className='eventcards'>
         
