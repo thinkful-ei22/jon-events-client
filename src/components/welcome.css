@@ -1,0 +1,11 @@
+.welcome-message {
+    font-size: 25px;
+    color: #0e3150;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.welcome-container {
+    border-bottom: 2px solid grey;
+    margin-bottom: 30px;
+}
